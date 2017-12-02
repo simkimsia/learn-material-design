@@ -12,20 +12,17 @@
     <!-- load MUI css -->
     <link href="//cdn.muicss.com/mui-0.9.29/css/mui.min.css" rel="stylesheet" type="text/css" />
     <!-- load page css -->
-    <link href="static/css/responsive-side-menu-style.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/responsive-side-menu-style.css" rel="stylesheet" type="text/css" />
     <!-- load MUI js -->
     <script src="//cdn.muicss.com/mui-0.9.29/js/mui.min.js"></script>
     <!-- load other project level js -->
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- load page js -->
-    <script src="static/js/responsive-side-menu-script.js"></script>
+    <script src="/static/js/responsive-side-menu-script.js"></script>
     <!-- custom font css -->
     <style>
       body {
         font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
-      }
-      * {
-          border: 1px solid red !important;
       }
     </style>
   </head>
@@ -37,9 +34,9 @@
       <div class="mui-divider"></div>
       <ul>
         <li>
-          <strong>Category 1</strong>
+          <strong>Tables</strong>
           <ul>
-            <li><a href="#">Item 1</a></li>
+            <li><a href="/responsive-side-menu/with-simple-table.html">Simple Table</a></li>
             <li><a href="#">Item 2</a></li>
             <li><a href="#">Item 3</a></li>
           </ul>
@@ -76,9 +73,26 @@
       <div class="mui-container-fluid">
         <br>
         <h1>Brand.io</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sollicitudin volutpat molestie. Nullam id tempor nulla. Aenean sit amet urna et elit pharetra consequat. Aliquam fringilla tortor vitae lectus tempor, tempor bibendum nunc elementum. Etiam ultrices tristique diam, vitae sodales metus bibendum id. Suspendisse blandit ligula eu fringilla pretium. Mauris dictum gravida tortor eu lacinia. Donec purus purus, ornare sit amet consectetur sed, dictum sit amet ex. Vivamus sit amet imperdiet tellus. Quisque ultrices risus a massa laoreet, vitae tempus sem congue. Maecenas nec eros ut lectus vehicula rutrum. Donec consequat tincidunt arcu non faucibus. Duis elementum, ante venenatis lacinia cursus, turpis massa congue magna, sed dapibus felis nibh sed tellus. Nam consectetur non nibh vitae sodales. Pellentesque malesuada dolor nec mi volutpat, eget vehicula eros ultrices.</p>
-        <p>Aenean vehicula tortor a tellus porttitor, id elementum est tincidunt. Etiam varius odio tortor. Praesent vel pulvinar sapien. Praesent ac sodales sem. Phasellus id ultrices massa. Sed id erat sit amet magna accumsan vulputate eu at quam. Etiam feugiat semper imperdiet. Sed a sem vitae massa condimentum vestibulum. In vehicula, quam vel aliquet aliquam, enim elit placerat libero, at pretium nisi lorem in ex. Vestibulum lorem augue, semper a efficitur in, dictum vitae libero. Donec velit est, sollicitudin a volutpat quis, iaculis sit amet metus. Nulla at ante nec dolor euismod mattis cursus eu nisl.</p>
-        <p>Quisque interdum facilisis consectetur. Nam eu purus purus. Curabitur in ligula quam. Nam euismod ligula eu tellus pellentesque laoreet. Aliquam erat volutpat. Curabitur eu bibendum velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc efficitur lorem sit amet quam porta pharetra. Cras ultricies pellentesque eros sit amet semper.</p>
+        <div class="mui-panel">
+          <table class="mui-table">
+            <thead>
+              <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cell 1-1</td>
+                <td>Cell 1-2</td>
+              </tr>
+              <tr>
+                <td>Cell 2-1</td>
+                <td>Cell 2-2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
     <footer id="footer">
