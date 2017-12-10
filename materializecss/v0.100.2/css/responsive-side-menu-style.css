@@ -27,9 +27,19 @@ buttons {
    padding-left: 300px;
  }
 
+ /**
+  * fix the left align for brand-logo
+  */
+ nav {
+   width: calc(100% - 300px);
+ }
+
  @media only screen and (max-width : 992px) {
    header, main, footer {
      padding-left: 0;
+   }
+   nav {
+     width: 100%;
    }
  }
 
