@@ -1,0 +1,16 @@
+/**
+ * because certain materializecss does not abide by material.io guidelines
+ * See https://material.io/guidelines/components/data-tables.html#data-tables-interaction
+ * and https://github.com/Dogfalo/materialize/issues/2262
+ */
+ table.striped > tbody > tr:nth-child(odd) {
+   background-color: #eeeeee !important;
+ }
+
+ table.highlight > tbody > tr:hover {
+   background-color: #eeeeee !important;
+ }
+
+ table > tbody > tr.selected {
+   background-color: #F5F5F5 !important;
+}

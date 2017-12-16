@@ -11,6 +11,8 @@
       <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection"/>
       <!-- load page css -->
       <link href="static/css/responsive-side-menu-style.css" rel="stylesheet" type="text/css" />
+      <link href="static/css/checkbox-color.css" rel="stylesheet" type="text/css" />
+      <link href="static/css/table-colors.css" rel="stylesheet" type="text/css" />
 
     </head>
 
@@ -45,9 +47,13 @@
             <div class="row">
               <div class="col s12" class="flow-text">
                 <div class="card-panel">
-                  <table>
+                  <table class="highlight">
                     <thead>
                       <tr>
+                          <th class="valign-wrapper">
+                            <input type="checkbox" class="filled-in checkbox-pink" id="all" />
+                            <label for="all"></label>
+                          </th>
                           <th>Name</th>
                           <th>Item Name</th>
                           <th>Item Price</th>
@@ -56,16 +62,28 @@
 
                     <tbody>
                       <tr>
+                        <td class="valign-wrapper">
+                          <input type="checkbox" class="filled-in checkbox-pink" id="checkbox1" />
+                          <label for="checkbox1"></label>
+                        </td>
                         <td>Alvin</td>
                         <td>Eclair</td>
                         <td>$0.87</td>
                       </tr>
                       <tr>
+                        <td class="valign-wrapper">
+                          <input type="checkbox" class="filled-in checkbox-pink" id="checkbox2" />
+                          <label for="checkbox2"></label>
+                        </td>
                         <td>Alan</td>
                         <td>Jellybean</td>
                         <td>$3.76</td>
                       </tr>
                       <tr>
+                        <td class="valign-wrapper">
+                          <input type="checkbox" class="filled-in checkbox-pink" id="checkbox3" />
+                          <label for="checkbox3"></label>
+                        </td>
                         <td>Jonathan</td>
                         <td>Lollipop</td>
                         <td>$7.00</td>
@@ -113,6 +131,7 @@
       <script type="text/javascript" src="static/js/materialize.min.js"></script>
       <!-- load page js -->
       <script src="static/js/responsive-side-menu-script.js"></script>
+      <script src="static/js/checkbox-table.js"></script>
 
     </body>
   </html>
